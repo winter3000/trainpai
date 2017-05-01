@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火车派</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!--<object type='application/x-shockwave-flash' data='images/worldofwar.swf'></object>-->
+<embed width="100%" height="100%" name="plugin" id="plugin" src="images/worldofwar.swf" type="application/x-shockwave-flash"
+      loop='false'>
+</body>
+</html>
+<script>
+    $(function(){
+        //控制body高
+        $('body').height($(window).height());
+        //判断播放结束跳转
+        var plugin=$('#plugin')[0];
+        var interval=setInterval(function(){
+            if(plugin.IsPlaying()==false){
+                $(location).attr('href', 'templates/index.html');
+                clearInterval(interval);
+            }
+//            console.log(plugin.IsPlaying())
+        },800);
+    })
+</script>
