@@ -1,0 +1,12 @@
+body{background: url("../images/index_bg.png") no-repeat center 110px/cover}
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.main .later{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
