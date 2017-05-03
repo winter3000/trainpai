@@ -4,6 +4,6 @@
 $(function(){
     //底部按钮
     $('#footer .button').click(function(){
-        $('#footer .main').toggle('slow');
+        $('#footer .main').toggle('500');
     })
 });

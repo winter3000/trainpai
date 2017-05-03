@@ -87,8 +87,8 @@ img,textarea,input{border: none}
     width: 100%;
     bottom: 0;
     /*bottom: -50px;
-    height: 50px;*/
-    transition: all 1s;
+    height: 50px;
+    transition: all 1s;*/
 }
 #footer .button{
     width: 52px;
@@ -101,16 +101,60 @@ img,textarea,input{border: none}
     z-index: 3;
 }
 #footer .main{
-    height: 50px;}
+    height: 50px;
+    line-height:50px;
+    display: none;
+}
 #footer .left{
     float: left;
     width: 80%;
     height: 100%;
     background: url("../images/bottom_bg_02.jpg") no-repeat center/cover;
 }
+#footer .link{
+    padding-left: 7px;
+    float: left;
+}
+#footer .link li{
+    float: left;
+    padding: 0 20px;
+}
+#footer .share{
+    float: right;
+    padding-right: 15px;
+}
+#footer .share li{
+    float: left;
+    padding: 0 7px;
+}
+#footer .share a{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    vertical-align: middle;
+    background: url("../images/share_icon_08.png") no-repeat center/cover;
+}
+#footer .share li:nth-child(3) a{
+    background-image: url("../images/share_icon_10.png");
+}
+#footer .share li:nth-child(4) a{
+    background-image: url("../images/share_icon_12.png");
+}
 #footer .right{
     float: right;
     width: 20%;
     height: 100%;
     background: #5acfce;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 7%;
+}
+#footer .right a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    margin-left: 23px;
+    background: url("../images/goto_top_05.png") no-repeat center/cover;
 }
