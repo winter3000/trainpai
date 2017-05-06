@@ -1,6 +1,85 @@
-body{background: url("../images/story_bg_03.png");}
-nav{background: #ffffff;
-    margin-bottom: 150px;}
-.mainpart{
+body{background: url("../images/index_bg.jpg") no-repeat center 110px/cover}
+#mainpart{
+    /*position: relative;*/
+    overflow: hidden;
+}
+#mainpart>div{transition: all 1.5s;  }
+#mainpart img{  display: block;  }
+#mainpart .first{
+    /*position: absolute;*/
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+#mainpart .first .btn-r{
+    position: absolute;
+    top: 380px;
+    left: 953px;
+    width: 67px;
+    height: 31px;
+    background: url("../images/history_r_btn_03.png") no-repeat center;
+}
+#mainpart .second{
+    display: block;
+    position: absolute;
+    /*position: relative;*/
+    left:100%;
+    /*left:0;*/
+    top: 0;
+    width: 100%;
+}
+#mainpart .second .item{
+    position: relative;
+    height: 569px;
+    z-index: 6;
+}
+#mainpart .second .item .part{
+    position: absolute;
+}
+#mainpart .second .station{
+    position: absolute;
+    left: 0;
+    bottom:-168px;
+    height: 214px;
+    width: 100%;
+    background: url("../images/history_station.png") no-repeat left transparent;
     text-align: center;
+}
+#mainpart .second .btn-item{
+    display: inline-block;
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+    height: 113px;
+}
+#mainpart .second .btn-item li{
+    float: left;
+}
+#mainpart .second .station-arrow img{
+    width: 90px;
+    height: 40px;
+    padding-top: 18px;
+}
+#mainpart .second .station-year{
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    background: #739388;
+    border:7px solid #edebec;
+    border-radius: 50%;
+    color: #ffffff;
+    line-height: 60px;
+    position: relative;
+}
+#mainpart .second .station-year.active{
+    background: #b4dbd8;
+}
+#mainpart .second .station-ellipsis{
+    width: 76px;
+    height: 67px;
+    background: url("../images/history_ellipsis.png") no-repeat center;
+}
+#mainpart .second .station-ellipsis.active{
+    background: url("../images/history_ellipsis_ac.png") no-repeat center;
 }
