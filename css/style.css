@@ -158,3 +158,31 @@ img,textarea,input{border: none}
     margin-left: 23px;
     background: url("../images/goto_top_05.png") no-repeat center/cover;
 }
+/*---------------------随鼠标移动--------------------------*/
+#mainpart{
+    position: relative;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1600px;
+    -moz-perspective: 1600px;
+    perspective: 1600px;
+}
+#mainpart .later,#mainpart .front{
+    transition: all 0.8s;
+    transform: rotateY(0deg);
+}
+#mainpart .front{
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+#mainpart .later{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

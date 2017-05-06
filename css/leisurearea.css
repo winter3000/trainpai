@@ -1,0 +1,43 @@
+body{
+    background: url("../images/index_bg.png") no-repeat center 110px/cover
+}
+#mainpart{
+    margin-bottom: -14px;
+}
+#mainpart .flag-l,#mainpart .flag-r{
+    position: absolute;
+    top: 0;
+    width: 33%;
+}
+#mainpart .flag-l{left: 0;}
+#mainpart .flag-r{right: 0}
+#mainpart .bottom-grass{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../images/area_bot.png") repeat-x left bottom;
+}
+#mainpart .later{
+    height: 100%;
+}
+
+/*#mainpart .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}*/
+#mainpart .shadow-read{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    /*background: #ffffff;*/
+/*    background-image: -webkit-radial-gradient(35% 58%,circle,transparent 5%,rgba(0,0,0,0.5) 15%,rgba(0,0,0,0.7) 20%);
+    background-image: radial-gradient(35% 58%,circle,transparent 5%,rgba(0,0,0,0.5) 15%,rgba(0,0,0,0.7) 20%);*/
+}
