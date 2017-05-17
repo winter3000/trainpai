@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Ruoyu on 2017/5/2.
  */
 $(function(){
@@ -13,7 +13,7 @@ $(function(){
     $('#mainpart').mousemove(function(e){
         var distance=e.pageX-windowW/2;    //距离差
         var  distanceRatio=distance/windowW*2; //距离差比率-1~1
-        frontBg.css('transform','rotateY('+distanceRatio*8+'deg)');
-        laterBg.css('transform','rotateY('+distanceRatio*15+'deg)');
+        frontBg.css('transform','rotateY('+distanceRatio*10+'deg)');
+        laterBg.css('transform','rotateY('+distanceRatio*20+'deg)');
     });
 });
