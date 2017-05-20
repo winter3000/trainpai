@@ -6,9 +6,7 @@ img,textarea,input{border: none}
 .clearfix{*zoom: 1;}
 .clearfix:after{content: "200B";  display: block;height: 0; font-size:0;visibility: hidden;overflow: hidden;line-height: 0;clear: both}
 .img100{width: 100%;}
-.borderbox{-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;}
+.borderbox{-webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;}
 /*---------------------nav--------------------------*/
 #nav{
     height: 110px;
@@ -82,28 +80,13 @@ img,textarea,input{border: none}
 }
 /*---------------------footer--------------------------*/
 #footer{
-    /*position: relative;*/
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    /*bottom: -50px;
-    height: 50px;
-    transition: all 1s;*/
-}
-#footer .button{
-    width: 52px;
-    height: 60px;
-    background: url("../images/pull_btn_03.png") no-repeat center/cover;
     position: absolute;
-    top: -40px;
-    left: 50%;
-    margin-left: -26px;
-    z-index: 3;
+    bottom: 0;
 }
 #footer .main{
     height: 50px;
     line-height:50px;
-    display: none;
 }
 #footer .left{
     float: left;
@@ -159,7 +142,7 @@ img,textarea,input{border: none}
     background: url("../images/goto_top_05.png") no-repeat center/cover;
 }
 /*---------------------随鼠标移动--------------------------*/
-#mainpart{
+/*#mainpart{
     position: relative;
     overflow: hidden;
     -webkit-transform-style: preserve-3d;
@@ -185,4 +168,4 @@ img,textarea,input{border: none}
     top: 0;
     left: 0;
     z-index: -1;
-}
+}*/

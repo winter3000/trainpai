@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/index.js"></script>
     <script src="../js/model.js"></script>
+    <script src="../js/index.js"></script>
 </head>
-<body>
+<body style="overflow: hidden">
+<!--加载-->
+<div id="loadgif" style="z-index: 66;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5)">
+    　　<img  alt="加载中..." src="../images/loading.gif" style="width:50px;height:50px;position:absolute;top:50%;left:50%;"/>
+</div>
+<!--导航-->
 <nav id="nav">
     <div class="logo">
         <a href="index.html">
@@ -52,6 +57,7 @@
         </div>
     </div>
 </nav>
+<!--主体-->
 <div id="mainpart">
     <div class="front">
         <param name="wmode" value="transparent" />
@@ -61,9 +67,27 @@
     <div class="later">
         <img src="../images/index_bg_later.png" alt="" class="img100">
     </div>
+    <div class="shadow"></div>
 </div>
-<footer id="footer">
+<!--下拉导航-->
+<div class="botnav">
     <div class="button"></div>
+    <div class="botnav-main">
+        <ul>
+            <li>
+                <div>1</div>
+            </li>
+            <li>
+                <div>2</div>
+            </li>
+            <li>
+                <div>3</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer">
     <div class="main">
         <div class="left">
             <ul class="link">
