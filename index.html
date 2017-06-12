@@ -8,7 +8,7 @@
 <body>
 <!--<object type='application/x-shockwave-flash' data='images/worldofwar.swf'></object>-->
 <embed width="80%" height="80%" name="plugin" id="plugin" src="images/worldofwar.swf" type="application/x-shockwave-flash"
-      loop='false' style="padding: 10% 10%">
+      loop='false' style="padding: 5% 10%">
 </body>
 </html>
 <script>
@@ -20,7 +20,7 @@
         var plugin=$('#plugin')[0];
         var interval=setInterval(function(){
             if(plugin.IsPlaying()==false){
-                $(location).attr('href', 'templates/index.html');
+                $(location).attr('href', 'templates/index/index.html');
                 clearInterval(interval);
             }
 //            console.log(plugin.IsPlaying())

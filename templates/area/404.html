@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火车派</title>
+    <link rel="stylesheet" href="../../model/model.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../model/model.js"></script>
+    <style>
+        body{background: url("../../images/index_bg.jpg") no-repeat center 110px/cover; }
+        #mainpart{
+            text-align: center;
+            background: url("../../images/404.jpg") no-repeat center/cover;
+        }
+        @font-face {
+            font-family: FZY3JW;
+            src: url("../../font/FZY3JW.TTF");
+        }
+        #mainpart .textBox{
+            font-family: FZY3JW;
+            padding-top: 26%;
+            display: inline-block;
+            text-align: left;
+        }
+        #mainpart .textBox h2{
+            font-size: 26px;
+            font-weight: normal;
+            color: #51463d;
+            line-height: 40px;
+        }
+        #mainpart .textBox li{
+            font-size: 18px;
+            color: #bdad9d;
+            line-height: 30px;
+            padding-left: 15px;
+            position: relative;
+        }
+        #mainpart .textBox li:before{
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #51463d ;
+            left: 0;
+            top: 34%;
+        }
+        #mainpart .textBox a{color: #51463d;}
+    </style>
+</head>
+<body>
+<!--加载-->
+<div id="loadgif" style="z-index: 66;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5)">
+    　　<img alt="加载中..." src="../../images/loading.gif" style="width:50px;height:50px;position:absolute;top:50%;left:50%;"/>
+</div>
+<!--导航-->
+<nav id="nav">
+    <div class="logo">
+        <a href="../index/index.html">
+            <img src="../../images/logo_03_03.png" alt="" class="img100">
+        </a>
+    </div>
+    <ul class="nav-bar">
+        <li><a href="../index/index.html">
+            <p>首页</p>
+            <p>HOME PAGE</p>
+        </a></li>
+        <li><a href="../history/trainhistory.html">
+            <p>火车史</p>
+            <p>TRAIN HISTORY</p>
+        </a></li>
+        <li><a href="../area/leisurearea.html" class="active">
+            <p>休闲区</p>
+            <p>LEISURE AREA</p>
+        </a></li>
+        <li><a href="../story/brandstory.html">
+            <p>品牌故事</p>
+            <p>BRAND STORY</p>
+        </a></li>
+        <li><a href="../about/aboutus.html">
+            <p>联系我们</p>
+            <p>CONTACT US</p>
+        </a></li>
+    </ul>
+    <div class="right">
+        <div class="search borderbox">
+            <div class="borderbox">
+                <input type="text">
+            </div>
+        </div>
+        <div class="music">
+            <img src="../../images/music_bg_08_06.png" alt="">
+            <audio src="../../images/test.mp3" loop="loop" autoplay="autoplay"><!---->
+                您的浏览器不支持 audio 标签。
+            </audio>
+        </div>
+    </div>
+</nav>
+<!--mainpart-->
+<div id="mainpart">
+    <div class="textBox">
+        <h2>哎呀，小火好像出故障了···</h2>
+        <ul>
+            <li>你可以去<a href="../index/index.html">首页</a> 欣赏一下美景</li>
+            <li>看看火车的<a href="../history/trainhistory.html">发展史</a></li>
+            <li>去<a href="leisurearea.html">休闲区</a>放松一下~</li>
+        </ul>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer">
+    <div class="main">
+        <div class="left">
+            <ul class="link">
+                <li><a href="index.html">2017火车派-TRAIN PAI</a></li>
+                <li><a href="javascript:;">网页简介</a></li>
+                <li><a href="../about/aboutus.html">联系我们</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+            </ul>
+            <ul class="share">
+                <li>分享至</li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <span>返回顶部</span>
+            <a href="#"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

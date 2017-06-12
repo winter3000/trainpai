@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火车派</title>
+    <link rel="stylesheet" href="../../model/model.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../model/model.js"></script>
+    <style>
+        #mainpart{background: url('../../images/about_us_bg.jpg') no-repeat center/cover}
+        #mainpart .light{
+            position: absolute;
+            left: 40%;
+            width: 80px;
+            z-index: 7;
+        }
+        .textBox{
+            float: right;
+            margin-right: 10%;
+            margin-top: 3.5%;
+            position: relative;
+        }
+        .textBox img{
+            width: 720px;
+        }
+        .textBox .title{
+            position: absolute;
+            top: 9%;
+            left: 23%;
+            width: 180px;
+        }
+        .inputbox{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .inputbox .left{
+            float: left;
+            width: 50%;
+            padding-left: 10%;
+            padding-top: 17%;
+        }
+        .inputbox .left p{
+            color: #c9ba83;
+            font-size:18px;
+            line-height: 32px;
+        }
+        .inputbox .left input{
+            height: 37px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 20px;
+            width: 100%;
+            background: transparent url('../../images/about_input_bg.png') no-repeat left top/cover;
+            outline:none;
+        }
+        .inputbox .left .textarea{
+            background: transparent url("../../images/about_textarea_bg.png") no-repeat left top/cover;
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-left: 17px;
+            width:100%;
+            height: 100px;
+        }
+        .inputbox .left textarea{
+            width:100%;
+            height: 100%;
+            resize: none;
+            background-color: transparent;
+            outline:none;
+        }
+        .inputbox .left textarea::-webkit-input-placeholder{color: #a3a29f}
+        .inputbox .left .btn-group{margin-top: 20px;}
+        .inputbox .left .btn-group>div{
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            color: #ffffff;
+            font-size: 16px;
+            background: url("../../images/about_text_btn.png") no-repeat center/contain;
+            cursor: pointer;
+        }
+        .inputbox .left .btn-l{float: left}
+        .inputbox .left .btn-r{float: right;margin-right: 14%;}
+        .inputbox .right{
+            float: right;
+            width: 50%;
+            padding-left: 7%;
+            padding-top: 16%;
+            color: #a3a29f;
+            font-size: 13px;
+            line-height:20px;
+        }
+        .inputbox .right h3,.inputbox .right h4{
+            font-weight: normal;
+            color: #c9ba83;
+        }
+        .inputbox .right h3{font-size: 22px;}
+        .inputbox .right h4{font-size: 18px;padding-top: 4%}
+    </style>
+</head>
+<body>
+<!--加载-->
+<div id="loadgif" style="z-index: 66;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5)">
+    　　<img alt="加载中..." src="../../images/loading.gif" style="width:50px;height:50px;position:absolute;top:50%;left:50%;"/>
+</div>
+<!--导航-->
+<nav id="nav">
+    <div class="logo">
+        <a href="../index/index.html">
+            <img src="../../images/logo_03_03.png" alt="" class="img100">
+        </a>
+    </div>
+    <ul class="nav-bar">
+        <li><a href="../index/index.html">
+            <p>首页</p>
+            <p>HOME PAGE</p>
+        </a></li>
+        <li><a href="../history/trainhistory.html">
+            <p>火车史</p>
+            <p>TRAIN HISTORY</p>
+        </a></li>
+        <li><a href="../area/leisurearea.html">
+            <p>休闲区</p>
+            <p>LEISURE AREA</p>
+        </a></li>
+        <li><a href="../story/brandstory.html">
+            <p>品牌故事</p>
+            <p>BRAND STORY</p>
+        </a></li>
+        <li><a href="../about/aboutus.html" class="active">
+            <p>联系我们</p>
+            <p>CONTACT US</p>
+        </a></li>
+    </ul>
+    <div class="right">
+        <div class="search borderbox">
+            <div class="borderbox">
+                <input type="text">
+            </div>
+        </div>
+        <div class="music">
+            <img src="../../images/music_bg_08_06.png" alt="">
+            <audio src="../../images/test.mp3" loop="loop" autoplay="autoplay"><!---->
+                您的浏览器不支持 audio 标签。
+            </audio>
+        </div>
+    </div>
+</nav>
+<!--主体-->
+<div id="mainpart">
+    <div class="light">
+        <img src="../../images/about_light.png" alt="">
+    </div>
+    <div class="textBox">
+        <img src="../../images/about_us_text.png" alt="">
+        <img src="../../images/about_title.png" alt="" class="title">
+        <div class="inputbox">
+            <div class="left borderbox">
+                <p>姓名</p>
+                <input type="text">
+                <p>邮箱</p>
+                <input type="text">
+                <div  class="borderbox textarea">
+                    <textarea placeholder="请在此输入您的留言内容"></textarea>
+                </div>
+                <div class="btn-group">
+                    <div class="btn-l">重置</div>
+                    <div class="btn-r">提交</div>
+                </div>
+            </div>
+            <div class="right borderbox">
+                <h3>您好 HELLO!</h3>
+                <p style="padding:3% 17% 0 0">感谢您来到火车派。若您有相对我们说的心里话，请您为我们留言或使用以下方式联系我们，我们将尽快给您回复。谢谢。</p>
+                <h4>电话:</h4>
+                <p>028-1234567</p>
+                <h4>邮箱:</h4>
+                <p>296920686@qq.com</p>
+                <h4>地址:</h4>
+                <p>四川省眉山市彭山区锦江大道一号</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer">
+    <div class="main">
+        <div class="left">
+            <ul class="link">
+                <li><a href="../index/index.html">2017火车派-TRAIN PAI</a></li>
+                <li><a href="javascript:;">网页简介</a></li>
+                <li><a href="../about/aboutus.html">联系我们</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+            </ul>
+            <ul class="share">
+                <li>分享至</li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <span>返回顶部</span>
+            <a href="#"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

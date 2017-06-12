@@ -1,0 +1,87 @@
+body{background: url("../../images/index_bg.jpg") no-repeat center 110px/cover}
+/*---------------------主体--------------------------*/
+#mainpart{position: relative}
+#mainpart .shadow{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s;
+}
+#mainpart .front{overflow: hidden;height: 100%}
+#mainpart .front embed,#mainpart .middle img,#mainpart .later img{margin-top: -80px}
+#mainpart .middle-f embed{margin-top: -70px}
+#mainpart .middle,#mainpart .later,#mainpart .middle-f{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+/*#mainpart .middle-f{z-index: -1}*/
+#mainpart .middle{z-index: -2}
+#mainpart .later{z-index: -3}
+#mainpart .middle img,#mainpart .later img{height: 110%}
+/*3d立起来*/
+#mainpart{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1600px;
+    -moz-perspective: 1600px;
+    perspective: 1600px;
+}
+#mainpart>div{
+    transition: transform 1.5s;
+    transform: rotateX(-90deg);
+}
+#mainpart .front{
+    height: 100%;
+}
+#mainpart .middle{
+    transform:rotateX(-90deg) translate3d(0,0,-30px);
+}
+#mainpart .later{
+    transform:rotateX(-90deg) translate3d(0,0,-30px);
+}
+/*---------------------下拉导航--------------------------*/
+.botnav{
+    position: relative;
+    width: 100%;
+    /*bottom: 50px;*/
+    text-align: center;
+    font-family:FZY3JW;
+}
+.botnav-main{display: none;}
+.botnav-main ul{
+    display: inline-block;
+    width: 70%;
+    height: 135px;
+    padding: 40px 0 80px;;
+}
+.botnav-main li{
+    width: 33%;
+    float: left;
+    font-size: 10px;
+    line-height: 23px;
+}
+.botnav-main li:hover{
+    color: #63dad9;
+}
+.botnav-main ul .text h4{
+    font-size: 18px;
+    font-weight:normal;
+}
+.botnav-main ul img{height: 135px;cursor: pointer;}
+.botnav .button{
+    width: 52px;
+    height: 60px;
+    background: url("../../images/pull_btn_03.png") no-repeat center/cover;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -26px;
+    cursor: pointer;
+}

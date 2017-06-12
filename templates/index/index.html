@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>火车派</title>
+    <link rel="stylesheet" href="../../model/model.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../model/model.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<!--加载-->
+<div id="loadgif" style="z-index: 66;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.5)">
+    　　<img alt="加载中..." src="../../images/loading.gif" style="width:50px;height:50px;position:absolute;top:50%;left:50%;"/>
+</div>
+<!--导航-->
+<nav id="nav">
+    <div class="logo">
+        <a href="index.html">
+            <img src="../../images/logo_03_03.png" alt="" class="img100">
+        </a>
+    </div>
+    <ul class="nav-bar">
+        <li><a href="index.html" class="active">
+            <p>首页</p>
+            <p>HOME PAGE</p>
+        </a></li>
+        <li><a href="../history/trainhistory.html">
+            <p>火车史</p>
+            <p>TRAIN HISTORY</p>
+        </a></li>
+        <li><a href="../area/leisurearea.html">
+            <p>休闲区</p>
+            <p>LEISURE AREA</p>
+        </a></li>
+        <li><a href="../story/brandstory.html">
+            <p>品牌故事</p>
+            <p>BRAND STORY</p>
+        </a></li>
+        <li><a href="../about/aboutus.html">
+            <p>联系我们</p>
+            <p>CONTACT US</p>
+        </a></li>
+    </ul>
+    <div class="right">
+        <div class="search borderbox">
+            <div class="borderbox">
+                <input type="text">
+            </div>
+        </div>
+        <div class="music">
+            <img src="../../images/music_bg_08_06.png" alt="">
+            <audio src="../../images/test.mp3" loop="loop" autoplay="autoplay"><!---->
+                您的浏览器不支持 audio 标签。
+            </audio>
+        </div>
+    </div>
+</nav>
+<!--主体-->
+<div id="mainpart" style="overflow: hidden">
+    <div class="middle-f">
+        <param name="wmode" value="transparent" />
+        <embed width="100%" height="110%" src="../../images/index_bg_mid.swf"
+               type="application/x-shockwave-flash" loop='false' wmode="transparent">
+    </div>
+    <div class="front">
+        <param name="wmode" value="transparent" />
+        <embed width="100%" height="110%" id="plugin" src="../../images/index_bg_front.swf"
+               type="application/x-shockwave-flash" loop='false' wmode="transparent">
+    </div>
+    <div class="middle">
+        <img src="../../images/index_middle.png" alt="">
+    </div>
+    <div class="later">
+        <img src="../../images/index_bg_later.png" alt="">
+    </div>
+    <div class="shadow"></div>
+</div>
+<!--下拉导航-->
+<div class="botnav">
+    <div class="button"></div>
+    <div class="botnav-main">
+        <ul>
+            <li onclick="location='../history/trainhistory.html'">
+                <img src="../../images/index_pull_img.png" alt="">
+                <div class="text">
+                    <h4>火车史</h4>
+                    <p>TRAIN HISTORY</p>
+                </div>
+            </li>
+            <li onclick="location='../area/leisurearea.html'">
+                <img src="../../images/index_pull_img2.png" alt="">
+                <div class="text">
+                    <h4>休闲区</h4>
+                    <p>LEISURE AREA</p>
+                </div>
+            </li>
+            <li onclick="location='../story/brandstory.html'">
+                <img src="../../images/index_pull_img3.png" alt="">
+                <div class="text">
+                    <h4>品牌故事</h4>
+                    <p>BRAND STORY</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer">
+    <div class="main">
+        <div class="left" style="width: 100%">
+            <ul class="link">
+                <li><a href="index.html">2017火车派-TRAIN PAI</a></li>
+                <li><a href="javascript:;">网页简介</a></li>
+                <li><a href="../about/aboutus.html">联系我们</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+            </ul>
+            <ul class="share">
+                <li>分享至</li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <div class="right" style="display: none">
+            <span>返回顶部</span>
+            <a href="#"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+body{
+    background: url("../../images/index_bg.jpg") no-repeat center 110px/cover;
+}
+#mainpart{
+    position: relative;
+}
+#mainpart .flag-l,#mainpart .flag-r{
+    position: absolute;
+    top: 0;
+    width: 33%;
+}
+#mainpart .flag-l{left: 0;}
+#mainpart .flag-r{right: 0}
+#mainpart .bottom-grass{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../../images/area_bot.png") repeat-x left bottom;
+}
+/*3d*/
+#mainpart .swf{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1600px;
+    -moz-perspective: 1600px;
+    perspective: 1600px;
+}
+#mainpart .swf{height: 100%}
+#mainpart .front,#mainpart .middle,#mainpart .later{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#mainpart embed,#mainpart .swf img{height: 110%;margin-top:  -80px}
+#mainpart .middle{
+    z-index: -3;
+    transform:translate3d(0,0,-100px);
+}
+#mainpart .later{
+    z-index: -6;
+    transform:translate3d(0,0,-200px);
+}
+#mainpart .link-read,#mainpart .link-game,#mainpart .link-movie{
+    position: absolute;
+    /*border: 1px solid red;*/
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    z-index:6;
+}
+#mainpart .link-read{top: 54%;  left: 27%;}
+#mainpart .link-game{top: 20%;  left: 56%; }
+#mainpart .link-movie{top: 61%;  left: 59%; }
+#mainpart .box-read,#mainpart .box-game,#mainpart .box-movie{
+    position: absolute;
+    /*border: 1px solid red;*/
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+}
+#mainpart .box-read{top: 40%;  left: 26%;}
+#mainpart .box-game{top: 12%;  left: 51%;}
+#mainpart .box-movie{top: 51%;  left: 53%;}
+#mainpart .shadow-read,#mainpart .shadow-game,#mainpart .shadow-movie{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+    transition: all 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+ }
+#mainpart .shadow-read{
+    background-image: url("../../images/area_shaow2_1.png");
+    background-position: center -100px;
+}
+#mainpart .shadow-game{
+    background-image: url("../../images/area_shaow4_1.png");
+    background-position: center -80px;
+}
+#mainpart .shadow-movie{
+    background-image: url("../../images/area_shaow3_1.png");
+    background-position: center -110px;
+}
+
+
+/*阅读区*/
+#readpart{background: none}
+#readpart-main{background: url("../../images/story_bg_03.png") repeat}
+#readpart-main .swf{
+    height:720px;
+    width: 100%;
+    background: url("../../images/area_read_bg.jpg") no-repeat center/cover;
+    overflow: hidden;
+}
+#readpart-main .swf embed{ margin-top: -100px;}
+#readpart-main>.line img{
+    width: 100%;
+    display: block;
+    margin-top: 0;
+}
+#readpart-main>.title{text-align: center;}
+#readpart-main .group-list{  padding-top:90px;}
+#readpart-main .group-list .item{
+    width: 100%;
+    padding: 0 6%;
+    position: relative;
+    overflow: hidden;
+    font-family: FZY4JW;
+}
+@font-face {
+    font-family: FZY4JW;
+    src: url('../../font/FZY4JW.TTF');
+}
+#readpart-main .group-list .item h4{
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    top: 7%;
+    text-align: center;
+    color: #9e8a77;
+    font-size: 26px;
+    z-index: 2;
+    font-weight: normal;
+}
+#readpart-main .group-list .bg{width: 100%}
+#readpart-main .group-list .item{
+    margin-bottom: 25px;
+}
+#readpart-main .group-list .item ul{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    width: 100%;
+}
+#readpart-main .group-list .item li{
+    float: left;
+    width: 15%;
+    margin-left: 10%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+#readpart-main .group-list ul li:nth-child(1){
+    margin-left:0;
+}
+#readpart-main .group-list .item .pic{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 6% 16% 17%;
+    top: 0;
+}
+#readpart-main .group-list .item .pic>img{
+    width: 100%;
+    height: 100%;
+}
+#readpart-main .group-list .item .shadow{top: -100%;transition: all 0.5s}
+#readpart-main .group-list .shadow .text{
+    position: absolute;
+    top: 36%;
+    width: 68%;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+#readpart-main.movie-main .swf{
+    background: url(../../images/area_read_bg.jpg) no-repeat center -110px/cover;
+}
+#readpart-main.movie-main>.line img{margin-top: -110px}
